@@ -1,10 +1,9 @@
 const form = document.getElementById('valida-num');
-const campoA = document.getElementById('campoA');
-const campoB = document.getElementById('campoB');
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
-
+    const campoA = document.getElementById('campoA');
+    const campoB = document.getElementById('campoB');
     const containerMensagem = document.querySelector('.message');
 
     if (campoB.value > campoA.value){
